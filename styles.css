@@ -223,6 +223,239 @@ button:focus {
 }
 
 /* ========================================
+   Markdown Styles (Scoped to Output Container)
+   ======================================== */
+
+/* Base Typography */
+.output-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #24292f;
+}
+
+/* Headers - Visual Hierarchy */
+.output-container h1,
+.output-container h2,
+.output-container h3,
+.output-container h4,
+.output-container h5,
+.output-container h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #24292f;
+}
+
+.output-container h1:first-child,
+.output-container h2:first-child,
+.output-container h3:first-child,
+.output-container h4:first-child,
+.output-container h5:first-child,
+.output-container h6:first-child {
+    margin-top: 0;
+}
+
+.output-container h1 {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.output-container h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.output-container h3 {
+    font-size: 1.25em;
+}
+
+.output-container h4 {
+    font-size: 1em;
+}
+
+.output-container h5 {
+    font-size: 0.875em;
+}
+
+.output-container h6 {
+    font-size: 0.85em;
+    color: #57606a;
+}
+
+/* Paragraphs */
+.output-container p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+/* Links */
+.output-container a {
+    color: #0969da;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.output-container a:hover {
+    text-decoration: underline;
+}
+
+.output-container a:visited {
+    color: #8250df;
+}
+
+/* Lists - Unordered and Ordered */
+.output-container ul,
+.output-container ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+.output-container ul {
+    list-style-type: disc;
+}
+
+.output-container ol {
+    list-style-type: decimal;
+}
+
+.output-container li {
+    margin-bottom: 4px;
+    line-height: 1.6;
+}
+
+.output-container li > p {
+    margin-bottom: 8px;
+}
+
+/* Nested Lists */
+.output-container ul ul,
+.output-container ul ol,
+.output-container ol ul,
+.output-container ol ol {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.output-container ul ul {
+    list-style-type: circle;
+}
+
+.output-container ul ul ul {
+    list-style-type: square;
+}
+
+/* Emphasis - Bold and Italic */
+.output-container strong,
+.output-container b {
+    font-weight: 600;
+}
+
+.output-container em,
+.output-container i {
+    font-style: italic;
+}
+
+/* Inline Code */
+.output-container code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(175, 184, 193, 0.2);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+/* Code Blocks */
+.output-container pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+}
+
+.output-container pre code {
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+    font-size: 100%;
+}
+
+/* Blockquotes */
+.output-container blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: #57606a;
+    border-left: 0.25em solid #d0d7de;
+}
+
+.output-container blockquote > :first-child {
+    margin-top: 0;
+}
+
+.output-container blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/* Horizontal Rules */
+.output-container hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #d0d7de;
+    border: 0;
+}
+
+/* Tables */
+.output-container table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.output-container table th,
+.output-container table td {
+    padding: 6px 13px;
+    border: 1px solid #d0d7de;
+}
+
+.output-container table th {
+    font-weight: 600;
+    background-color: #f6f8fa;
+}
+
+.output-container table tr {
+    background-color: #fff;
+    border-top: 1px solid #d0d7de;
+}
+
+.output-container table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+/* Images */
+.output-container img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+/* ========================================
    Mobile Responsive Layout (<768px)
    ======================================== */
 
