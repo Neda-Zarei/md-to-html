@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Markdown to HTML Converter</h1>
+    </header>
+    
+    <main>
+        <section class="input-section">
+            <h2>Input</h2>
+            <div class="file-input-container">
+                <label for="file-input">Upload Markdown File:</label>
+                <input type="file" id="file-input" accept=".md,.markdown" aria-label="Upload Markdown file">
+            </div>
+            <div class="textarea-container">
+                <label for="markdown-textarea">Or paste/edit Markdown here:</label>
+                <textarea id="markdown-textarea" rows="15" placeholder="Enter your Markdown here..." aria-label="Markdown input textarea"></textarea>
+            </div>
+            <div class="button-container">
+                <button id="clear-button" type="button">Clear / Reset</button>
+            </div>
+        </section>
+        
+        <section class="output-section">
+            <h2>Output</h2>
+            <div id="html-output" class="output-container"></div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>
